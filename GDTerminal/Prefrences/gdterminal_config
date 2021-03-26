@@ -1,0 +1,11 @@
+magnification, 43
+six nm, yes
+twelve nm, no
+eighteen nm, no
+lower bound for six, 1
+upper bound for six, 60 
+lower bound for twelve, 60 
+upper bound for twelve, 80
+lower bound for eighteen, 0
+upper bound for eighteen, 0
+threshold sensitivity, 4
