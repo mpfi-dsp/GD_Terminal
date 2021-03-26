@@ -34,10 +34,6 @@ PIL.Image.MAX_IMAGE_PIXELS = 9331200000
 
 
 
-image_path = glob.glob('Input/*.*')
-image_path = image_path[0]
-
-
 data = pd.read_csv('Prefrences/gdterminal_config', sep=",", header=None)
 settings = np.array(data[1][0:])
 
@@ -60,7 +56,7 @@ if yes in settings[3]:
 elif no in settings[3]:
   eighteennm = False
 
-
+magnification = float(settings[0])
 lower_six = float(settings[4])
 upper_six = float(settings[5])
 lower_twelve = float(settings[6])
@@ -69,9 +65,22 @@ lower_eighteen = float(settings[8])
 upper_eighteen = float(settings[9])
 thresh_sens = float(settings[10])
 
+if (magnification == 0):
+  os.mkdir('Media')
+  os.mkdir('Media/Output')
+  os.mkdir('pix2pix/datasets/Output_Appended')
+  os.mkdir('pix2pix/datasets/Output_Appended/test')
+  os.mkdir('pix2pix/results/golddigger/test_latest/images')
+  os.mkdir('Media/Output_ToStitch')
+  os.mkdir('Media/Output_Final')
+  os.mkdir('Input')
+  os.mkdir('Output')
+  raise SystemExit(0)
 
 
 
+image_path = glob.glob('Input/*.*')
+image_path = image_path[0]
 
 shutil.rmtree('Media/Output')
 os.mkdir('Media/Output')
