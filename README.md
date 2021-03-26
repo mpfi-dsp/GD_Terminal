@@ -6,7 +6,7 @@ A version of Gold Digger able to run via command line
 2. Go to GDTerminal/Prefrences/gdterminal_config.txt and edit "magnification, 43" to "magnification, 0"
 3. Install python package requirements in requirements.txt
 4. Run gdterminal.py to initialize the program and populate neccesary folders. 
-5. Return to GDTerminal/Prefrences/gdterminal_config.txt and set "magnification, 0" to any number. This does NOT effect the code and is only for self-logging.
+5. Return to GDTerminal/Prefrences/gdterminal_config.txt and set "magnification, 0" to any number. This does NOT affect the code and is only for self-logging.
 6. Drag an image into GDTerminal/Input and then run gdterminal.py
 7. The output will appear in GDTerminal/Output
 
