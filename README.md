@@ -1,4 +1,6 @@
 # GD_Terminal
+⚠️ This project is no longer officially supported. We are unable to provide assistance in regards to troubleshooting.
+
 A version of Gold Digger able to run via command line
 
 # How to Use Gold Digger
